@@ -71,7 +71,7 @@
             }, dojo.byId('measurementDiv'));
             measurement.startup();
             var myButton = new Button({
-                label: "Compass",
+                label: "Busola",
                 onClick: function () {
                     if (count == 1)
                         {
