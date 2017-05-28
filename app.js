@@ -152,6 +152,17 @@
 
 
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         var orientationHandle;
 
         function orientationChangeHandler() {
@@ -222,14 +233,7 @@
                 accuracy = event.webkitCompassAccuracy;
             }
 
-            if (accuracy < 11) {
-                compassNeedleContext.fillStyle = "rgba(0, 205, 0, 0.9)";
-            } else if (accuracy >= 15 && accuracy < 25) {
-                compassNeedleContext.fillStyle = "rgba(255, 255, 0, 0.9)";
-            } else if (accuracy > 24) {
-                compassNeedleContext.fillStyle = "rgba(255, 0, 0, 0.9)";
-            }
-            compassNeedleContext.fill();
+
 
             if (renderingInterval == -1) {
                 rotateNeedle();
