@@ -286,9 +286,7 @@
 
 
     // switches keeping track of our current app state
-    var isOrientationLockable = false;
-    var isOrientationLocked = false;
-    var isNightMode = false;
+
 
 
     // the orientation of the device on app load
