@@ -363,45 +363,14 @@
     
     
     
-    
-    
-    
-    
+
     
 
 
- 
-    
-    
-    
-    
-    
-    
 
-    function toggleOrientationLockable(lockable) {
-        isOrientationLockable = lockable;
-
-        if (isOrientationLockable) {
-            btnLockOrientation.classList.remove("btn--hide");
-
-            btnNightmode.classList.add("column-25");
-            btnNightmode.classList.remove("column-33");
-            btnMap.classList.add("column-25");
-            btnMap.classList.remove("column-33");
-            btnInfo.classList.add("column-25");
-            btnInfo.classList.remove("column-33");
-        } else {
-            btnLockOrientation.classList.add("btn--hide");
-
-            btnNightmode.classList.add("column-33");
-            btnNightmode.classList.remove("column-25");
-            btnMap.classList.add("column-33");
-            btnMap.classList.remove("column-25");
-            btnInfo.classList.add("column-33");
-            btnInfo.classList.remove("column-25");
-        }
-    }
-
+    
+    
+    
     function checkLockable() {
         if (screen.orientation && screen.orientation.lock) {
             screen.orientation.lock(getBrowserOrientation()).then(function () {
