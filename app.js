@@ -282,10 +282,7 @@
 
 
     // info popup elements, pus buttons that open popups
-    var popup = document.getElementById("popup");
-    var popupContents = document.getElementById("popup-contents");
-    var popupInners = document.querySelectorAll(".popup__inner");
-    var btnsPopup = document.querySelectorAll(".btn-popup");
+
 
 
     // buttons at the bottom of the screen
