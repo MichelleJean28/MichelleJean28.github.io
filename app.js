@@ -355,6 +355,11 @@
         }
     }
 
+    function toggleOrientationLock() {                                // NU SUNT SIGUR
+        if (isOrientationLockable) {
+            lockOrientationRequest(!isOrientationLocked);
+        }
+    }
     
     
     
@@ -363,26 +368,6 @@
     
     
     
-
-    
-
-
-
-    
-    
-
-
-    
-    
-    
-    
-
-
-    
-    
-    
-
-
 
     function locationUpdate(position) {
         positionCurrent.lat = position.coords.latitude;
@@ -398,29 +383,17 @@
         console.log("location fail: ", error);
     }
 
-    function setNightmode(on) {
+    
+    
+    
 
-        if (on) {
-            btnNightmode.classList.add("active");
-        } else {
-            btnNightmode.classList.remove("active");
-        }
-
-        window.setTimeout(function () {
-            if (on) {
-                document.documentElement.classList.add("nightmode");
-            } else {
-                document.documentElement.classList.remove("nightmode");
-            }
-        }, 1);
+    
+    
+    
+    
+    
 
 
-        isNightMode = on;
-    }
-
-    function toggleNightmode() {
-        setNightmode(!isNightMode);
-    }
 
     function openMap() {
         window.open("https://www.google.com/maps/place/@" + positionCurrent.lat + "," + positionCurrent.lng + ",16z", "_blank");
@@ -480,13 +453,9 @@
 
     window.addEventListener("deviceorientation", onHeadingChange);
 
-    document.addEventListener("fullscreenchange", onFullscreenChange);
-    document.addEventListener("webkitfullscreenchange", onFullscreenChange);
-    document.addEventListener("mozfullscreenchange", onFullscreenChange);
-    document.addEventListener("MSFullscreenChange", onFullscreenChange);
+
 
     btnLockOrientation.addEventListener("click", toggleOrientationLock);
-    btnNightmode.addEventListener("click", toggleNightmode);
     btnMap.addEventListener("click", openMap);
 
     var i;
@@ -503,7 +472,6 @@
         timeout: 27000
     });
 
-    setNightmode(false);
     checkLockable();
 
 }());
