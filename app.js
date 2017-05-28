@@ -284,37 +284,13 @@
     
     
     // browser agnostic orientation
-    function getBrowserOrientation() {
-        var orientation;
-        if (screen.orientation && screen.orientation.type) {
-            orientation = screen.orientation.type;
-        } else {
-            orientation = screen.orientation ||
-                screen.mozOrientation ||
-                screen.msOrientation;
-        }
 
-        return orientation;
-    }
 
 
     
     
     
-    // browser agnostic orientation unlock
 
-    
-
-    // browser agnostic document.fullscreenElement
-
-
-    
-
-    // browser agnostic document.documentElement.requestFullscreen
-
-
-
-    // browser agnostic document.documentElement.exitFullscreen
 
 
 
