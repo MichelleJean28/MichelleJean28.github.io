@@ -376,18 +376,7 @@
     
     
     
-    function lockOrientationRequest(doLock) {
-        if (isOrientationLockable) {
-            if (doLock) {
-                browserRequestFullscreen();
-                lockOrientation(true);
-            } else {
-                browserUnlockOrientation();
-                browserExitFullscreen();
-                lockOrientation(false);
-            }
-        }
-    }
+
 
     function lockOrientation(locked) {
         if (locked) {
