@@ -271,9 +271,18 @@
 
 
     // elements that ouput our position
+    var positionLat = document.getElementById("position-lat");
+    var positionLng = document.getElementById("position-lng");
+    var positionHng = document.getElementById("position-hng");
 
 
-
+    
+    
+    
+    
+    
+    
+    
     // debug outputs
     var debugOrientation = document.getElementById("debug-orientation");
     var debugOrientationDefault = document.getElementById("debug-orientation-default");
