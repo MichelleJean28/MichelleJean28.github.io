@@ -259,7 +259,11 @@
     var debug = false;
 
     // our current position
-
+    var positionCurrent = {
+        lat: null,
+        lng: null,
+        hng: null
+    };
 
 
     // the outer part of the compass that rotates
@@ -267,9 +271,7 @@
 
 
     // elements that ouput our position
-    var positionLat = document.getElementById("position-lat");
-    var positionLng = document.getElementById("position-lng");
-    var positionHng = document.getElementById("position-hng");
+
 
 
     // debug outputs
