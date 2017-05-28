@@ -255,6 +255,11 @@
     });
 
 
+    
+    
+    
+    
+    
     //set to true for debugging output       // NU POTI STERGE
     var debug = false;
 
@@ -385,15 +390,6 @@
 
     
     
-    
-
-    
-    
-    
-    
-    
-
-
 
     function openMap() {
         window.open("https://www.google.com/maps/place/@" + positionCurrent.lat + "," + positionCurrent.lng + ",16z", "_blank");
@@ -406,31 +402,11 @@
     
     
 
-    
-    
-    
-    
 
-    function decimalToSexagesimal(decimal, type) {
-        var degrees = decimal | 0;
-        var fraction = Math.abs(decimal - degrees);
-        var minutes = (fraction * 60) | 0;
-        var seconds = (fraction * 3600 - minutes * 60) | 0;
-
-        var direction = "";
-        var positive = degrees > 0;
-        degrees = Math.abs(degrees);
-        switch (type) {
-            case "lat":
-                direction = positive ? "N" : "S";
-                break;
-            case "lng":
-                direction = positive ? "E" : "W";
-                break;
-        }
-
-        return degrees + "° " + minutes + "' " + seconds + "\" " + direction;
-    }
+    
+    
+    
+    
 
     if (screen.width > screen.height) {
         defaultOrientation = "landscape";
