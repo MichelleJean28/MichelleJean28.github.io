@@ -280,11 +280,19 @@
     // the orientation of the device on app load
     var defaultOrientation;
 
+    // browser agnostic orientation                                       // NU POTI STERGE
+    function getBrowserOrientation() {
+        var orientation;
+        if (screen.orientation && screen.orientation.type) {
+            orientation = screen.orientation.type;
+        } else {
+            orientation = screen.orientation ||
+                screen.mozOrientation ||
+                screen.msOrientation;
+        }
 
-    
-    
-    // browser agnostic orientation
-
+        return orientation;
+    }
 
 
     
