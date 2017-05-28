@@ -258,19 +258,14 @@
     //set to true for debugging output
     var debug = false;
 
-    // our current position
+    // our current position                      // NU POTI STERGE
     var positionCurrent = {
         lat: null,
         lng: null,
         hng: null
     };
 
-
-    // the outer part of the compass that rotates
-    //var rose = document.getElementById("rose");
-
-
-    // elements that ouput our position
+    // elements that ouput our position                            // NU POTI STERGE
     var positionLat = document.getElementById("position-lat");
     var positionLng = document.getElementById("position-lng");
     var positionHng = document.getElementById("position-hng");
@@ -278,21 +273,14 @@
 
     
     
-    
-    
-    
-    
-    
+
     // debug outputs
-    var debugOrientation = document.getElementById("debug-orientation");
-    var debugOrientationDefault = document.getElementById("debug-orientation-default");
-
-
-    // info popup elements, pus buttons that open popups
 
 
 
-    // buttons at the bottom of the screen
+
+
+
 
 
 
