@@ -255,7 +255,8 @@
     });
 
 
-    //set to true for debugging output
+    //set to true for debugging output       // NU POTI STERGE
+    var debug = false;
 
     // our current position                      // NU POTI STERGE
     var positionCurrent = {
@@ -269,11 +270,9 @@
     var positionLng = document.getElementById("position-lng");
     var positionHng = document.getElementById("position-hng");
 
-
-    
-    
-
-
+    // debug outputs                                                       // NU POTI STERGE
+    var debugOrientation = document.getElementById("debug-orientation");
+    var debugOrientationDefault = document.getElementById("debug-orientation-default");
 
 
 
