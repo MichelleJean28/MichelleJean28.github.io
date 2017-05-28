@@ -403,23 +403,13 @@
         popupOpen(event.currentTarget.dataset.name);
     }
 
-    function popupOpen(name) {
-        var i;
-        for (i = 0; i < popupInners.length; i++) {
-            popupInners[i].classList.add("popup__inner--hide");
-        }
-        document.getElementById("popup-inner-" + name).classList.remove("popup__inner--hide");
+    
+    
 
-        popup.classList.add("popup--show");
-    }
-
-    function popupClose() {
-        popup.classList.remove("popup--show");
-    }
-
-    function popupContentsClick(event) {
-        event.stopPropagation();
-    }
+    
+    
+    
+    
 
     function decimalToSexagesimal(decimal, type) {
         var degrees = decimal | 0;
