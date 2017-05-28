@@ -274,25 +274,15 @@
     var debugOrientation = document.getElementById("debug-orientation");
     var debugOrientationDefault = document.getElementById("debug-orientation-default");
 
-
-
-
-
-
-
-
     // if we have shown the heading unavailable warning yet
     var warningHeadingShown = false;
-
-
-    // switches keeping track of our current app state
-
-
 
     // the orientation of the device on app load
     var defaultOrientation;
 
 
+    
+    
     // browser agnostic orientation
     function getBrowserOrientation() {
         var orientation;
@@ -304,44 +294,17 @@
                 screen.msOrientation;
         }
 
-        /*
-          'portait-primary':      for (screen width < screen height, e.g. phone, phablet, small tablet)
-                                    device is in 'normal' orientation
-                                  for (screen width > screen height, e.g. large tablet, laptop)
-                                    device has been turned 90deg clockwise from normal
-
-          'portait-secondary':    for (screen width < screen height)
-                                    device has been turned 180deg from normal
-                                  for (screen width > screen height)
-                                    device has been turned 90deg anti-clockwise (or 270deg clockwise) from normal
-
-          'landscape-primary':    for (screen width < screen height)
-                                    device has been turned 90deg clockwise from normal
-                                  for (screen width > screen height)
-                                    device is in 'normal' orientation
-
-          'landscape-secondary':  for (screen width < screen height)
-                                    device has been turned 90deg anti-clockwise (or 270deg clockwise) from normal
-                                  for (screen width > screen height)
-                                    device has been turned 180deg from normal
-        */
-
         return orientation;
     }
 
 
+    
+    
+    
     // browser agnostic orientation unlock
-    function browserUnlockOrientation() {
-        if (screen.orientation && screen.orientation.unlock) {
-            screen.orientation.unlock();
-        } else if (screen.unlockOrientation) {
-            screen.unlockOrientation();
-        } else if (screen.mozUnlockOrientation) {
-            screen.mozUnlockOrientation();
-        } else if (screen.msUnlockOrientation) {
-            screen.msUnlockOrientation();
-        }
-    }
+
+    
+    
 
 
     // browser agnostic document.fullscreenElement
