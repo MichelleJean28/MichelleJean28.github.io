@@ -259,11 +259,7 @@
     var debug = false;
 
     // our current position
-    var positionCurrent = {
-        lat: null,
-        lng: null,
-        hng: null
-    };
+
 
 
     // the outer part of the compass that rotates
