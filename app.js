@@ -256,7 +256,6 @@
 
 
     //set to true for debugging output
-    var debug = false;
 
     // our current position                      // NU POTI STERGE
     var positionCurrent = {
@@ -274,7 +273,6 @@
     
     
 
-    // debug outputs
 
 
 
