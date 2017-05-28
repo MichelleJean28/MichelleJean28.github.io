@@ -382,11 +382,7 @@
     
     
 
-    function toggleOrientationLock() {
-        if (isOrientationLockable) {
-            lockOrientationRequest(!isOrientationLocked);
-        }
-    }
+
 
     function locationUpdate(position) {
         positionCurrent.lat = position.coords.latitude;
