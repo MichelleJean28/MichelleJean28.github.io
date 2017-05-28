@@ -403,19 +403,7 @@
     
 
 
-    
-    
-    
-    
 
-    if (screen.width > screen.height) {
-        defaultOrientation = "landscape";
-    } else {
-        defaultOrientation = "portrait";
-    }
-    if (debug) {
-        debugOrientationDefault.textContent = defaultOrientation;
-    }
 
     window.addEventListener("deviceorientation", onHeadingChange);
 
