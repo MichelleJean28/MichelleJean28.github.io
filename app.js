@@ -304,22 +304,11 @@
     // browser agnostic orientation unlock
 
     
-    
-
 
     // browser agnostic document.fullscreenElement
-    function getBrowserFullscreenElement() {
-        if (typeof document.fullscreenElement !== "undefined") {
-            return document.fullscreenElement;
-        } else if (typeof document.webkitFullscreenElement !== "undefined") {
-            return document.webkitFullscreenElement;
-        } else if (typeof document.mozFullScreenElement !== "undefined") {
-            return document.mozFullScreenElement;
-        } else if (typeof document.msFullscreenElement !== "undefined") {
-            return document.msFullscreenElement;
-        }
-    }
 
+
+    
 
     // browser agnostic document.documentElement.requestFullscreen
     function browserRequestFullscreen() {
