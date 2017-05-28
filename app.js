@@ -23,18 +23,13 @@
         ], function (dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
-        var COMPASS_SIZE = 125;
         var pt;
         var graphic;
         var watchId;
-        var compassFaceRadius, compassFaceDiameter;
         var needleAngle, needleWidth, needleLength, compassRing;
         var renderingInterval = -1;
         var currentHeading;
         var hasCompass;
-        var compassHousing;
-        var containerX;
-        var containerY;
         var compassNeedleContext;
         var symbol;
         ready(function () {
