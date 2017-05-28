@@ -1,14 +1,7 @@
 (function () {
-    "use strict";
-
-
-
-
-
-
+            "use strict";
 
     require([
-            "esri/Color",
             "dojo/dom",
             "dojo/dom-geometry",
             "dojo/has",
@@ -19,18 +12,15 @@
             "esri/geometry/Point",
             "esri/graphic",
             "esri/map",
-            "esri/symbols/SimpleLineSymbol",
-            "esri/symbols/SimpleMarkerSymbol",
-	    "esri/symbols/PictureMarkerSymbol",
+	        "esri/symbols/PictureMarkerSymbol",
             "esri/arcgis/utils",
-      "esri/dijit/Measurement",
-      "dijit/form/Button",
-      "calcite-maps/calcitemaps-v0.3",
-      "bootstrap/Collapse",
-      "bootstrap/Dropdown",
-      "bootstrap/Tab",
-      "dojo/domReady!"
-        ], function (Color, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, SimpleLineSymbol, SimpleMarkerSymbol, PictureMarkerSymbol, arcgisUtils, Measurement, Button, CalciteMaps) {
+            "dijit/form/Button",
+            "calcite-maps/calcitemaps-v0.3",
+            "bootstrap/Collapse",
+            "bootstrap/Dropdown",
+            "bootstrap/Tab",
+            "dojo/domReady!"
+        ], function (dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var COMPASS_SIZE = 125;
@@ -66,10 +56,7 @@
             });
             symbol = new PictureMarkerSymbol('symbol.png', 25, 25);
             var count = 1;
-            var measurement = new Measurement({
-                map: window.map,
-            }, dojo.byId('measurementDiv'));
-            measurement.startup();
+            
             var myButton = new Button({
                 label: "Busola",
                 onClick: function () {
@@ -267,13 +254,6 @@
             }
         }
     });
-
-
-
-
-
-
-
 
 
     //set to true for debugging output
@@ -687,7 +667,7 @@
     popupContents.addEventListener("click", popupContentsClick);
 
     navigator.geolocation.watchPosition(locationUpdate, locationUpdateFail, {
-        enableHighAccuracy: false,
+        enableHighAccuracy: true,
         maximumAge: 30000,
         timeout: 27000
     });
