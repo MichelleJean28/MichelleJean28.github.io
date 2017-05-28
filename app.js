@@ -370,15 +370,13 @@
     
 
 
-    function onFullscreenChange() {
-        if (isOrientationLockable && getBrowserFullscreenElement()) {
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock(getBrowserOrientation()).then(function () {}).catch(function () {});
-            }
-        } else {
-            lockOrientationRequest(false);
-        }
-    }
+ 
+    
+    
+    
+    
+    
+    
 
     function toggleOrientationLockable(lockable) {
         isOrientationLockable = lockable;
