@@ -374,7 +374,13 @@
     
     
 
+    function locationUpdate(position) {
+        positionCurrent.lat = position.coords.latitude;
+        positionCurrent.lng = position.coords.longitude;
 
+        positionLat.textContent = decimalToSexagesimal(positionCurrent.lat, "lat");
+        positionLng.textContent = decimalToSexagesimal(positionCurrent.lng, "lng");
+    }
 
     function locationUpdateFail(error) {
         positionLat.textContent = "n/a";
