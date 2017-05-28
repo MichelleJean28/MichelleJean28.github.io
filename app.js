@@ -289,10 +289,7 @@
 
 
     // buttons at the bottom of the screen
-    var btnLockOrientation = document.getElementById("btn-lock-orientation");
-    var btnNightmode = document.getElementById("btn-nightmode");
-    var btnMap = document.getElementById("btn-map");
-    var btnInfo = document.getElementById("btn-info");
+
 
 
     // if we have shown the heading unavailable warning yet
