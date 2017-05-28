@@ -370,25 +370,12 @@
 
     
     
-    
-    function checkLockable() {
-        if (screen.orientation && screen.orientation.lock) {
-            screen.orientation.lock(getBrowserOrientation()).then(function () {
-                toggleOrientationLockable(true);
-                browserUnlockOrientation();
-            }).catch(function (event) {
-                if (event.code === 18) { // The page needs to be fullscreen in order to call lockOrientation(), but is lockable
-                    toggleOrientationLockable(true);
-                    browserUnlockOrientation(); //needed as chrome was locking orientation (even if not in fullscreen, bug??)
-                } else { // lockOrientation() is not available on this device (or other error)
-                    toggleOrientationLockable(false);
-                }
-            });
-        } else {
-            toggleOrientationLockable(false);
-        }
-    }
 
+
+    
+    
+    
+    
     function lockOrientationRequest(doLock) {
         if (isOrientationLockable) {
             if (doLock) {
