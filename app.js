@@ -412,13 +412,7 @@
     btnLockOrientation.addEventListener("click", toggleOrientationLock);
     btnMap.addEventListener("click", openMap);
 
-    var i;
-    for (i = 0; i < btnsPopup.length; i++) {
-        btnsPopup[i].addEventListener("click", popupOpenFromClick);
-    }
 
-    popup.addEventListener("click", popupClose);
-    popupContents.addEventListener("click", popupContentsClick);
 
     navigator.geolocation.watchPosition(locationUpdate, locationUpdateFail, {
         enableHighAccuracy: true,
