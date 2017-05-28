@@ -307,7 +307,6 @@
         if (typeof heading !== "undefined" && heading !== null) { // && typeof orientation !== "undefined") {
             // we have a browser that reports device heading and orientation
 
-
             if (debug) {
                 debugOrientation.textContent = orientation;
             }
@@ -369,12 +368,7 @@
     
     
     
-    function showHeadingWarning() {
-        if (!warningHeadingShown) {
-            popupOpen("noorientation");
-            warningHeadingShown = true;
-        }
-    }
+
 
     function onFullscreenChange() {
         if (isOrientationLockable && getBrowserFullscreenElement()) {
