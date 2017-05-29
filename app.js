@@ -52,10 +52,10 @@
                 slider: false
             });
             
-                var statesLayer = new TileLayer({url: "https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer"});
+                var Layer = new TileLayer({url: "https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer"});
 
 
-                
+                map.addLayer(Layer);
             
             
             
