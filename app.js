@@ -2,6 +2,8 @@
             "use strict";
 
     require([
+            "esri/layers/FeatureLayer",
+
             "dojo/dom",
             "dojo/dom-geometry",
             "dojo/has",
@@ -20,7 +22,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (FeatureLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
@@ -49,6 +51,20 @@
                 zoom: 16,
                 slider: false
             });
+            
+            
+            
+            
+                var statesLayer = new FeatureLayer("https://services7.arcgis.com/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WFL/FeatureServer/0", {
+                    outFields: ["*"]
+                });
+
+                window.map.addLayer(statesLayer);            
+            
+            
+            
+            
+            
             symbol = new PictureMarkerSymbol('symbol.png', 25, 25);
             var count = 1;
             
