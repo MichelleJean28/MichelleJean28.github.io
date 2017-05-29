@@ -59,7 +59,7 @@
                     outFields: ["*"]
                 });
 
-                window.map.addLayer(statesLayer);            
+                map.addLayer(statesLayer);            
             
             
             
