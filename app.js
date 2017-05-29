@@ -2,7 +2,7 @@
             "use strict";
 
     require([
-            "esri/layers/FeatureLayer",        
+            "esri/layers/TileLayer",        
         
             "dojo/dom",
             "dojo/dom-geometry",
@@ -22,7 +22,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (FeatureLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (TileLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
@@ -52,7 +52,7 @@
                 slider: false
             });
             
-                var statesLayer = new FeatureLayer("https://services7.arcgis.com/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WFL/FeatureServer/0", {
+                var statesLayer = new TileLayer("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer/0", {
                     outFields: ["*"]
                 });
 
