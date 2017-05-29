@@ -53,7 +53,6 @@
             });
             
                 var statesLayer = new TileLayer("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer", {
-                    outFields: ["*"]
                 });
 
 
