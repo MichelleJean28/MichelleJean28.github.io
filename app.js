@@ -366,17 +366,6 @@
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
 
     window.addEventListener("deviceorientation", onHeadingChange);
 
