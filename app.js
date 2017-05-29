@@ -2,7 +2,7 @@
             "use strict";
 
     require([
-            "esri/layers/VectorTileLayer",
+            "esri/layers/TiledMapServiceLayer",
 
             "dojo/dom",
             "dojo/dom-geometry",
@@ -22,7 +22,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (VectorTileLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (TiledMapServiceLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
@@ -55,7 +55,7 @@
             
             
             
-                var statesLayer = new vectorTileLayer("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer", {
+                var statesLayer = new TiledMapServiceLayer("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer", {
                 });
 
                 map.addLayer(statesLayer);            
