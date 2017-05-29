@@ -376,9 +376,7 @@
 
 
 
-    function openMap() {
-        window.open("https://www.google.com/maps/place/@" + positionCurrent.lat + "," + positionCurrent.lng + ",16z", "_blank");
-    }
+
 
     window.addEventListener("deviceorientation", onHeadingChange);
 
