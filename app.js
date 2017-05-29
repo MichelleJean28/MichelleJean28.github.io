@@ -376,12 +376,6 @@
 
 
 
-    function locationUpdateFail(error) {
-        positionLat.textContent = "n/a";
-        positionLng.textContent = "n/a";
-        console.log("location fail: ", error);
-    }
-
     function openMap() {
         window.open("https://www.google.com/maps/place/@" + positionCurrent.lat + "," + positionCurrent.lng + ",16z", "_blank");
     }
