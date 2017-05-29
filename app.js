@@ -2,6 +2,8 @@
             "use strict";
 
     require([
+            "esri/layers/FeatureLayer",        
+        
             "dojo/dom",
             "dojo/dom-geometry",
             "dojo/has",
@@ -20,7 +22,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (FeatureLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
