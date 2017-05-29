@@ -2,6 +2,7 @@
             "use strict";
 
     require([
+            "esri/layers/WebTiledLayer",
 
             "dojo/dom",
             "dojo/dom-geometry",
@@ -21,7 +22,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function ( dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (WebTiledLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
