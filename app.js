@@ -2,7 +2,6 @@
             "use strict";
 
     require([
-            "esri/layers/ArcGISDynamicMapServiceLayer",
 
             "dojo/dom",
             "dojo/dom-geometry",
@@ -22,7 +21,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (ArcGISDynamicMapServiceLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function ( dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
@@ -55,7 +54,7 @@
             
             
             
-                var statesLayer = new ArcGISDynamicMapServiceLayer ("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer", {
+                var statesLayer = new WebTiledLayer ("https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer", {
                 });
 
                 map.addLayer(statesLayer);            
