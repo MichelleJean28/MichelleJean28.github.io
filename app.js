@@ -264,16 +264,10 @@
     var debug = false;
 
     // our current position                      // NU POTI STERGE
-    var positionCurrent = {
-        lat: null,
-        lng: null,
-        hng: null
-    };
+
 
     // elements that ouput our position                            // NU POTI STERGE
-    var positionLat = document.getElementById("position-lat");
-    var positionLng = document.getElementById("position-lng");
-    var positionHng = document.getElementById("position-hng");
+
 
     // debug outputs                                                       // NU POTI STERGE
     var debugOrientation = document.getElementById("debug-orientation");
