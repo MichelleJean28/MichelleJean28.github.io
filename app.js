@@ -392,10 +392,6 @@
         window.open("https://www.google.com/maps/place/@" + positionCurrent.lat + "," + positionCurrent.lng + ",16z", "_blank");
     }
 
-    function popupOpenFromClick(event) {
-        popupOpen(event.currentTarget.dataset.name);
-    }
-
     window.addEventListener("deviceorientation", onHeadingChange);
 
     btnLockOrientation.addEventListener("click", toggleOrientationLock);
