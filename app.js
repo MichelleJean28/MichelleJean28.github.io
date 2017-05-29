@@ -360,11 +360,7 @@
         }
     }
 
-    function toggleOrientationLock() {                                // NU SUNT SIGUR
-        if (isOrientationLockable) {
-            lockOrientationRequest(!isOrientationLocked);
-        }
-    }
+
     
 
     window.addEventListener("deviceorientation", onHeadingChange);      // NU POTI STERGE
