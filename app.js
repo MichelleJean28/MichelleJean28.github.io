@@ -151,17 +151,6 @@
         }
 
 
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         var orientationHandle;
 
@@ -233,32 +222,15 @@
                 accuracy = event.webkitCompassAccuracy;
             }
 
-
-
             if (renderingInterval == -1) {
                 rotateNeedle();
             }
         }
 
-        // Convert degrees to radians
-        function degToRad(deg) {
-            return (deg * Math.PI) / 180;
-        }
-
-        // Handle portrait and landscape mode orientation changes
-        function orientationChanged() {
-            if (map) {
-                map.reposition();
-                map.resize();
-            }
-        }
-    });
+    }      // END FUNCTION
+    );     // END REQUIRE
 
 
-    
-    
-    
-    
     
     //set to true for debugging output       // NU POTI STERGE
     var debug = false;
@@ -360,11 +332,6 @@
         }
     }
 
-
-    
-
     window.addEventListener("deviceorientation", onHeadingChange);      // NU POTI STERGE
 
-
-
-}());
+}());      // END FUNCTION
