@@ -2,8 +2,6 @@
             "use strict";
 
     require([
-            "esri/layers/TileLayer",        
-        
             "dojo/dom",
             "dojo/dom-geometry",
             "dojo/has",
@@ -22,7 +20,7 @@
             "bootstrap/Dropdown",
             "bootstrap/Tab",
             "dojo/domReady!"
-        ], function (TileLayer, dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
+        ], function (dom, domGeom, has, on, parser, ready, win, Point, Graphic, Map, PictureMarkerSymbol, arcgisUtils, Button, CalciteMaps) {
 
         var map;
         var pt;
@@ -51,15 +49,6 @@
                 zoom: 16,
                 slider: false
             });
-            
-                var Layer = new TileLayer({url: "https://tiles.arcgis.com/tiles/6FZUQ16zBFwjeNsQ/arcgis/rest/services/bucuresti2_WTL2/MapServer"});
-
-
-                map.addLayer(Layer);
-            
-            
-            
-            
             symbol = new PictureMarkerSymbol('symbol.png', 25, 25);
             var count = 1;
             
