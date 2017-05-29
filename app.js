@@ -366,10 +366,6 @@
         }
     }
     
-
-    window.addEventListener("deviceorientation", onHeadingChange);
-
     btnLockOrientation.addEventListener("click", toggleOrientationLock);
-
 
 }());
