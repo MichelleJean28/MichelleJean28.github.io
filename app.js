@@ -366,6 +366,10 @@
         }
     }
     
+
+    window.addEventListener("deviceorientation", onHeadingChange);      // NU POTI STERGE
+
     btnLockOrientation.addEventListener("click", toggleOrientationLock);
+
 
 }());
